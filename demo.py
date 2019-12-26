@@ -15,8 +15,10 @@ samples = [
 ]
 df_b = pd.DataFrame(samples, columns=columns)
 
-print(df_a)
-print(ag.find_s(df_a))
-print('\n')
-print(df_b)
-print(ag.find_s(df_b))
+#print(df_a)
+#print(ag.find_s(df_a))
+#print('\n')
+#print(df_b)
+#print(ag.find_s(df_b))
+
+print(ag.candidate_elimination(df_b))
