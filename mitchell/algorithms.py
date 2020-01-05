@@ -49,7 +49,7 @@ def candidate_elimination(df):
     g = {key:'?' for key in df.iloc[:, :-1].columns}
     G = [g]
     
-    # Update s for each row where the last column is 1
+    # Update s for each row where the last column is 1, G for either case
     for i, row in df.iterrows():
         if row.iloc[-1] == 1:
             s = update_s(s, row)
