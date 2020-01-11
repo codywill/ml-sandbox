@@ -1,4 +1,5 @@
 ml_env/
 datasets/
 .ipynb_checkpoints
+pickles/
 *.pyc
